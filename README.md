@@ -37,7 +37,7 @@ Merge Sort is a **divide-and-conquer** sorting algorithm. It recursively divides
 
 ---
 
-## **3. Shell Sort 🐚**
+## **3. Shell Sort **
 
 ### **Description**
 
@@ -52,7 +52,7 @@ Shell Sort is an improved version of Insertion Sort. It works by comparing eleme
 
 ---
 
-## **Coverage 🐚**
+## **Coverage **
 
 Make sure you have "coverage" in your requirements.txt file and run pip install. Then run `python -m coverage run -m unittest discover` and after that run `python -m coverage report` to get the following table:
 ```
