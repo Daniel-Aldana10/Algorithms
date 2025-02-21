@@ -10,7 +10,3 @@ def shellsort(list):
             list[j] = temp
         interval = interval//2
     return list
-datos = [9,8,3,7,5,6,4,1]
-print(shellsort(datos))
-datos = [9,8,3,7,5,6,4,1,1,1,1]
-print(shellsort(datos))

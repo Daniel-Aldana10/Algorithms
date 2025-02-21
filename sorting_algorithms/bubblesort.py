@@ -8,9 +8,3 @@ def bubblesort(list):
         if not swapped:
             break
     return list
-def main():
-    list = [5,6,1,3,4]
-    print(bubblesort(list))
-    list = [-1,5,6,1,2]
-    print(bubblesort(list))
-main()
