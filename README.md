@@ -52,25 +52,43 @@ Shell Sort is an improved version of Insertion Sort. It works by comparing eleme
 
 ---
 
-## Coverage 
+
+## Coverage
 
 Make sure you have "coverage" in your requirements.txt file and run pip install. Then run `python -m coverage run -m unittest discover` and after that run `python -m coverage report` to get the following table:
 ```
-Name                                Stmts   Miss  Cover
+Name                               Stmts   Miss  Cover
 ------------------------------------------------------
 data\constants.py                      2      0   100%
 data\data_generator.py                 9      1    89%
-sorting_algorithms\bubblesort.py      10      2    80%
-sorting_algorithms\mergesort.py       20      3    85%
+sorting_algorithms\bubblesort.py      10      0   100%
+sorting_algorithms\mergesort.py       20      0   100%
 sorting_algorithms\shellsort.py       12      0   100%
 test\__init__.py                       0      0   100%
 test\test_algorithms.py               24      1    96%
 test\test_data_generator.py           29      1    97%
 ------------------------------------------------------
-TOTAL                                106      8    92%
+TOTAL                                106      3    97%
+
 ```
 ---
 If you want to see the lines that are not being used you can run 'python -m cover html' and then 'start htmlcov\index.html'
+
+## ** Complexities **
+| Algorith       | Best case  | Worst Case  | Average Case  |
+|----------------|------------|------------|---------------|
+| **Bubble Sort** | O(n)       | O(n²)      | O(n²)         |
+| **Merge Sort** | O(n log n) | O(n log n) | O(n log n)    |
+| **Shell Sort** | O(n log n) | O(n²)      | O(n^(3/2))    |
+
+## Analysis of Sorting Algorithms
+
+### Memory Usage
+![Memory Usage](images/Memoria.png)
+
+### Execution Time
+![Execution Time](images/Tiempo.png)
+
 ## **Conclusion**
 
 - **Use Merge Sort** when efficiency and stability are priorities.

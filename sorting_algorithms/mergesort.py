@@ -1,21 +1,21 @@
 def mergesort(list):
-    if(len(list) <= 1):
-        return list
-    half = len(list)//2
-    list1, list2 = mergesort(list[:half]), mergesort(list[half:])
-    return merge(list1,list2)
+    if len(list) <= 1:  # O(1)
+        return list  # O(1)
+    half = len(list) // 2  # O(1)
+    list1, list2 = mergesort(list[:half]), mergesort(list[half:])  # O(n log n)
+    return merge(list1, list2)  # O(n)
 def merge(left, right):
-    new_list = []
-    i, j = 0, 0
-    while i < len(left) and j < len(right):
-        if int(left[i]) <= int(right[j]):
-            new_list.append(left[i])
-            i += 1
+    new_list = []  # O(1)
+    i, j = 0, 0  # O(1)
+    while i < len(left) and j < len(right):  # O(n)
+        if int(left[i]) <= int(right[j]):  # O(1)
+            new_list.append(left[i])  # O(1)
+            i += 1  # O(1)
         else:
-            new_list.append(right[j])
-            j += 1
-    if i < len(left):
-        new_list += left[i:]
-    if j < len(right):
-        new_list += right[j:]
-    return new_list
+            new_list.append(right[j])  # O(1)
+            j += 1  # O(1)
+    if i < len(left):  # O(1)
+        new_list += left[i:]  # O(n)
+    if j < len(right):  # O(1)
+        new_list += right[j:]  # O(n)
+    return new_list  # O(1)

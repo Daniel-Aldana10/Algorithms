@@ -43,25 +43,25 @@ expected = [
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     [1, 2, 3, 4, 5, 7]
 ]
+
 class AlgorithmsTests(unittest.TestCase):
-    def test_split_and_sorted_approach(self):
+    def test_bubblesort(self):
         for i in range(len(arrays)):
-            array = arrays[i]
+            array = arrays[i].copy()
             result = bubblesort.bubblesort(array)
             self.assertEqual(result, expected[i])
 
-    def test_no_split_and_sorted_approach(self):
+    def test_mergesort(self):
         for i in range(len(arrays)):
-            array = arrays[i]
+            array = arrays[i].copy()
             result = mergesort.mergesort(array)
             self.assertEqual(result, expected[i])
 
-    def test_full_sort_and_iterate_approach(self):
+    def test_shellsort(self):
         for i in range(len(arrays)):
-            array = arrays[i]
+            array = arrays[i].copy()
             result = shellsort.shellsort(array)
             self.assertEqual(result, expected[i])
 
-
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(verbosity=2)
